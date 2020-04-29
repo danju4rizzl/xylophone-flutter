@@ -15,13 +15,11 @@ class XylophoneApp extends StatelessWidget {
   }
 
 // Renders (returns) the keys in an expanded widget
-  renderKey({dynamic keyColor, int sound}) {
+  renderKey({Color keyColor, int sound}) {
     return Expanded(
       child: FlatButton(
         color: keyColor,
-        onPressed: () {
-          getSound(sound);
-        }, // child: Text('$note'),
+        onPressed: () => getSound(sound), // child: Text('$note'),
       ),
     );
   }
