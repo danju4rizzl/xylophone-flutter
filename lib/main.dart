@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:assets_audio_player/assets_audio_player.dart';
 
@@ -19,7 +17,8 @@ class XylophoneApp extends StatelessWidget {
     return Expanded(
       child: FlatButton(
         color: keyColor,
-        onPressed: () => getSound(sound), // child: Text('$note'),
+        onPressed: () => getSound(sound), // child: Text
+        child: Text('$sound'),
       ),
     );
   }
